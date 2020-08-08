@@ -1,9 +1,5 @@
 https://codepen.io/bashjoey/pen/KKzwKVy
 
-<!-- Questions to Submit in today's file first-lastname.txt -->
-<!--
-Copy the questions below into the first-lastname.txt file on your github repo - answer each question and then push your changes. 
-
     1. What is Semantic HTML? 
 
     Semantic HTML is intentionally using human and contextual words to markup a website so that it is both understandable to 
@@ -210,16 +206,29 @@ Stretch Questions
 
     inline-block respects width and height 
 
-    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that 
+    is display inline-block by default
 
     a. h1, p, div
     b. em, strong
     c. img
 
-    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all 
+    elements respect the width we've given them? 
 
-    !!!Will return to answer this 
+    Box model are the parts that control space of an element; width, height, margin, padding, border.
 
+    The fix would be to either be mindful of the px of each of these parts of the box, or use this:
 
+    (code snippet taken from https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+    html {
+        box-sizing: border-box;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    } 
+
+    ...which uses the width property as the actual rendered width. padding or border wont be added to the rendered width and 
+    instead will automatically subtract from the space.
 
    -->
