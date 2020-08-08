@@ -103,29 +103,24 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 
     22. What is a parent child selector? When would this be useful? 
 
-    The parent child combinator selects only the elements one-level-deep. i.e. the following would only capitalize 
-
-    html: 
-    <div id='mainInfo'>
-    <p>paragraph one</p>
-    <p>paragraph two</p>
-    <div id='subInfo'>
-    <p>paragraph expanding on mainInfo</p>
-    </div>
-    </div>
-
-    css: 
-    #mainInfo > p {
-        text-transform: capitalize;
-    }
+    The parent child combinator affects only the elements one-level-deep. 
+    i.e. https://codepen.io/bashjoey/pen/OJNPYMd
+    This would be useful because it helps to be even more targeted in specifying 
+    elements.
 
     23. How do you select all links within a div with the class of sidebar?
 
-    !!!I'll come back to this
+    .sidebar a {
+
+    }
 
     24. What is a pseudo selector?
 
-    !!!I'll come back to this
+    It specifies elements in certain situations, like if the mouse hovers over something. 
+    i.e.:
+    a:hover {
+
+    }
 
     25. What do we use the change the spacing between lines?
 
@@ -188,16 +183,42 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 
     37. Walk me through Lambda's git flow. 
 
-    First you fork the repository. Then you add your TL(s) as collaborator's in Settings
+    First you fork the repository. Then you add your TL(s) as collaborator's in Settings. Then, you copy the link to
+    the repo you forked making sure it's your copy and not the master copy. In terminal you would navigate to the 
+    directory you want to place the data, and do:
+
+    git clone [url]
+
+    Then you would be sure to use git checkout -b 'joseph-cristina' to create a new branch, and push changes made
+    using git push origin joseph-cristina. Then on the Github website, you'd create a pull request, changing to the 
+    'joseph-cristina' branch in the drop-down menu, and add your TL(s) as reviewers.
     
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+
+    inline elements show up side to side and can share space, block elements drop to the next line and take up full 
+    page width
+
     2. What happens when an element is positioned absolutely? 
+
+    So I'm not too sure still, but from what I'm gathering it removes the element from the page flow and allows you 
+    to place it anywhere on the page, essentially creating a new axis to work with.
+
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+    inline-block respects width and height 
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+    a. h1, p, div
+    b. em, strong
+    c. img
+
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+
+    !!!Will return to answer this 
 
 
 
