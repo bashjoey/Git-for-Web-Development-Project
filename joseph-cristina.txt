@@ -5,42 +5,176 @@ https://codepen.io/bashjoey/pen/KKzwKVy
 Copy the questions below into the first-lastname.txt file on your github repo - answer each question and then push your changes. 
 
     1. What is Semantic HTML? 
+
+    Semantic HTML is intentionally using human and contextual words to markup a website so that it is both understandable to 
+    everyone and accessible to those who use screen readers and assistive technology. 
+
     2. What is HTML used for? 
+
+    For marking up a webpage- providing a structural layout that both people and browsers can understand.
+
     3. What is an attribute and where do we put it? 
+
+    Attributes provide extra details about an element. It would go within the element's tag after the element is called, 
+    i.e. <a href="#"> = 'a' is the element, 'href' is the attribute.
+
     4. What is the h1 tag used for? How many times should I use it on a page?
+
+    The h1 element is the highest header within the HTML header hierarchy. It should only be used one time, and should be the 
+    defining title of the webpage.
+
     5. Name two tags that have required attributes
+
+    The img element requires an attribute such as src, a element requires an attribute such as href
+
     6. What do we put in the head of our HTML document? 
+
+    Boiler plate! The head has information about the HTML, such as what version is being used, the title of the page, what 
+    character encoding, metadata descriptors such as the title author and page description, and more. This is also where 
+    you'd call your stylesheet, favicons, external fonts, etc.
+
     7. What is an id? 
+
+    An id is a an attribute that is specific and can only be called once
+
     8. What elements can I add an id to? 
+
+    id is a global identifier so my undertanding is that it can be added to any element.
+
     9. How many times can I use the same id on a page? 
+
+    Once. 
+
     10. What is a class? 
+
+    Similar to id only it can be reused throughout the page.
+
     11. What elements can I add a class to? 
+
+    Again my understanding is that it can be used on any.
+
     12. How many times can I use the same class on a page? 
+
+    As many times as you need.
+
     13. How do I get my link to open in a new tab?
+
+    target='_blank'
+
     14. What is the alt attribute in the image tag used for? 
+
+    Describing the contents of the image for accessibility.
+
     15. How do I reference an id?
+
+    id='thisIsTheID'
+
     16. What is the difference between a section and a div
+
+    They are the same, section just adds semantic meaning to the div.
+
     17. What is CSS used for? 
+
+    Styling, color, positioning, fonts, etc. Basically anything visual.
+
     18. How to we select an element? Example - every h2 on the page
+
+    h2 {
+
+    }
+
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+    If you have, say, ten h2 tags- and you want to modify something about just one of them and never again make 
+    this modification, id would be preferable. If you wanted to modify 5 of the 10 h2's, you'd use class, because
+    classes are reusable. 
+
     20. How do we select classes in CSS?
+
+    .className {
+
+    }
+
     21. How do we select a p element with a single class of “human””?
+
+    .human p {
+
+    }
+
     22. What is a parent child selector? When would this be useful? 
+
+    !!!I'll come back to this
+
     23. How do you select all links within a div with the class of sidebar?
+
+    !!!
+
     24. What is a pseudo selector?
+
+    !!!
+
     25. What do we use the change the spacing between lines?
+
+    line-height:
+
     26. What do we use to change the spacing between letters?
+
+    letter-spacing:
+
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+
     28. How do I add a 1px border around my div that is dotted and black?
+
+    div {
+    border-style: dotted;
+    border-width: 1px;
+    border-color: black;
+    }
+
     29. How do I select everything on the page? 
+
+    The universal selector!
+
+    * {
+
+    }
+
     30. How do I write a comment in CSS?
+
+    /* Like This */
+
     31. How do I find out what file I am in, when I am using the command line? 
+
+    pwd
+
     32. Using the command line - how do I see a list of files/folders in my current folder?
+
+    ls
+
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+
+    rm -rf filename.ext - There is no confirmation prompt and deletion is irreversible. 
+
     34. Why should I use version control? 
+
+    Version control allows for saving code, tracking updates, and allows for collaboration among multiple contributors.
+    It also allows for you to revert back to a prior state in case you screw something up.
+
     35. How often should I commit to github?
+
+    As often as possible, but I imagine this is a preference thing.
+
     36. What is the command we would use to push our repo up to github? 
+
+    git push origin master [or in our case with pushing to a separate branch] git push origin joseph-cristina
+
     37. Walk me through Lambda's git flow. 
+
+    
 
 Stretch Questions
 
