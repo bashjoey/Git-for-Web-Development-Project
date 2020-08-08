@@ -103,7 +103,21 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 
     22. What is a parent child selector? When would this be useful? 
 
-    !!!I'll come back to this
+    The parent child combinator selects only the elements one-level-deep. i.e. the following would only capitalize 
+
+    html: 
+    <div id='mainInfo'>
+    <p>paragraph one</p>
+    <p>paragraph two</p>
+    <div id='subInfo'>
+    <p>paragraph expanding on mainInfo</p>
+    </div>
+    </div>
+
+    css: 
+    #mainInfo > p {
+        text-transform: capitalize;
+    }
 
     23. How do you select all links within a div with the class of sidebar?
 
@@ -174,7 +188,8 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 
     37. Walk me through Lambda's git flow. 
 
-    First you fork the repository. Then 
+    First you fork the repository. Then you add your TL(s) as collaborator's in Settings
+    
 
 Stretch Questions
 
