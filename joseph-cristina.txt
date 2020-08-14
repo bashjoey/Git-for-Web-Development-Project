@@ -31,7 +31,7 @@ https://codepen.io/bashjoey/pen/KKzwKVy
 
     7. What is an id? 
 
-    An id is a an attribute that is specific and can only be called once
+    An id is a an attribute that is specific and can only be used once within the HTML.
 
     8. What elements can I add an id to? 
 
@@ -211,7 +211,7 @@ Stretch Questions
 
     a. h1, p, div
     b. em, strong
-    c. img
+    c. img (wrong..?)
 
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all 
     elements respect the width we've given them? 
